@@ -4,45 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
     app:startDestination="@id/mainFragment">
-
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.fragmentmenu.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
+            android:id="@+id/action_mainFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_fragmentA"
-            app:destination="@id/fragmentA" />
+            android:id="@+id/action_mainFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_fragmentB"
-            app:destination="@id/fragmentB" />
+            android:id="@+id/action_mainFragment_to_grifoFragment"
+            app:destination="@id/grifoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentA"
-        android:name="com.example.fragmentmenu.FragmentA"
-        android:label="fragment_a"
-        tools:layout="@layout/fragment_a" />
+        android:id="@+id/perfilFragment"
+        android:name="com.example.fragmentmenu.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
     <fragment
-        android:id="@+id/fragmentB"
-        android:name="com.example.fragmentmenu.FragmentB"
-        android:label="fragment_b"
-        tools:layout="@layout/fragment_b" />
+        android:id="@+id/tiendaFragment"
+        android:name="com.example.fragmentmenu.TiendaFragment"
+        android:label="fragment_tienda"
+        tools:layout="@layout/fragment_tienda" />
     <fragment
-        android:id="@+id/menuFragment"
-        android:name="com.example.fragmentmenu.MenuFragment"
-        android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" >
-        <action
-            android:id="@+id/action_menuFragment_to_fragmentA"
-            app:destination="@id/fragmentA" />
-        <action
-            android:id="@+id/action_menuFragment_to_fragmentA2"
-            app:destination="@id/fragmentA" />
-        <action
-            android:id="@+id/action_menuFragment_to_fragmentA3"
-            app:destination="@id/fragmentA" />
-    </fragment>
+        android:id="@+id/grifoFragment"
+        android:name="com.example.fragmentmenu.GrifoFragment"
+        android:label="fragment_grifo"
+        tools:layout="@layout/fragment_grifo" />
 </navigation>

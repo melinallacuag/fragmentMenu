@@ -22,14 +22,17 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        fragmentA.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_menuFragment)
+        cardPerfil.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_perfilFragment)
+        }
+        cardTienda.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_tiendaFragment)
+        }
+        cardGrifo.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_grifoFragment)
         }
 
-        fragmentB.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_fragmentB)
-        }
+
     }
 
 }
