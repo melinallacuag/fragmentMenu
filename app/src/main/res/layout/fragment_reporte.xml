@@ -1,79 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReporteFragment">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        tools:context=".TiendaFragment">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="783dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:rowCount="1"
-            >
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/cat_hamburguesa"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40sp"
-                    android:layout_marginEnd="20dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="center"
-                    android:src="@drawable/cat_licores"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/roudimage" />
-
-                <TextView
-                    android:id="@+id/texthamburguesa"
-                    android:layout_width="200dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/border"
-                    android:backgroundTint="#CCD9D9D9"
-                    android:padding="15sp"
-                    android:text="HAMBURGUESA"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14dp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/cat_hamburguesa"
-                    app:layout_constraintEnd_toEndOf="@+id/cat_hamburguesa"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="@+id/cat_hamburguesa"
-                    app:layout_constraintTop_toTopOf="@+id/cat_hamburguesa" />
-
-
-            </LinearLayout>
-
-
-
-        </GridLayout>
-
-    </ScrollView>
-
-
-
+        android:text="@string/hello_blank_fragment" />
 
     <GridLayout
         android:id="@+id/gridLayout"
@@ -82,28 +20,27 @@
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
         android:layout_marginBottom="20sp"
+        android:layout_weight="12"
 
         android:background="@drawable/solid_menu"
-
-        android:layout_weight="12"
         android:columnCount="4"
         android:rowCount="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="10dp">
 
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardsTienda"
             android:layout_width="1dp"
-            android:backgroundTint="#051E78"
             android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            >
+            android:backgroundTint="#051E78"
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -122,14 +59,14 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardsReporte"
             android:layout_width="1dp"
             android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            >
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -145,18 +82,17 @@
                     android:src="@drawable/icon_reporte" />
 
 
-
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardsUsuario"
             android:layout_width="1dp"
             android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            >
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -184,15 +120,15 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardsGrifo"
             android:layout_width="1dp"
-            android:backgroundTint="#051E78"
             android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            >
+            android:backgroundTint="#051E78"
+            app:cardCornerRadius="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -213,9 +149,5 @@
         </androidx.cardview.widget.CardView>
 
 
-
     </GridLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+</androidx.constraintlayout.widget.ConstraintLayout>

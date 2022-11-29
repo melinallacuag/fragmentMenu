@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_mainFragment_to_grifoFragment"
             app:destination="@id/grifoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_reporteFragment"
+            app:destination="@id/reporteFragment" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -48,4 +51,9 @@
             android:id="@+id/action_grifoFragment_to_perfilFragment"
             app:destination="@id/perfilFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/reporteFragment"
+        android:name="com.example.fragmentmenu.ReporteFragment"
+        android:label="fragment_reporte"
+        tools:layout="@layout/fragment_reporte" />
 </navigation>

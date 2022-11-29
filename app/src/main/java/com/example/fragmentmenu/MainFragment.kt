@@ -31,6 +31,9 @@ class MainFragment : Fragment() {
         cardGrifo.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_grifoFragment)
         }
+        cardReporte.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_reporteFragment)
+        }
 
 
     }
