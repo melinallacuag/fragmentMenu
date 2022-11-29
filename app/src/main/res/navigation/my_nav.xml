@@ -23,7 +23,17 @@
         android:id="@+id/perfilFragment"
         android:name="com.example.fragmentmenu.PerfilFragment"
         android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_grifoFragment"
+            app:destination="@id/grifoFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
     <fragment
         android:id="@+id/tiendaFragment"
         android:name="com.example.fragmentmenu.TiendaFragment"
@@ -33,5 +43,9 @@
         android:id="@+id/grifoFragment"
         android:name="com.example.fragmentmenu.GrifoFragment"
         android:label="fragment_grifo"
-        tools:layout="@layout/fragment_grifo" />
+        tools:layout="@layout/fragment_grifo" >
+        <action
+            android:id="@+id/action_grifoFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+    </fragment>
 </navigation>
