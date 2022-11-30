@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import kotlinx.android.synthetic.main.fragment_grifo.*
 import kotlinx.android.synthetic.main.fragment_perfil.*
+import kotlinx.android.synthetic.main.fragment_perfil.cardsUsuario
 
 
 class GrifoFragment : Fragment() {
@@ -29,6 +31,9 @@ class GrifoFragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_perfilFragment)
         }
 
+        cardFacturacion.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_facturaFragment)
+        }
 
 
     }

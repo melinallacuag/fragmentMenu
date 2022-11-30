@@ -50,10 +50,18 @@
         <action
             android:id="@+id/action_grifoFragment_to_perfilFragment"
             app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_facturaFragment"
+            app:destination="@id/facturaFragment" />
     </fragment>
     <fragment
         android:id="@+id/reporteFragment"
         android:name="com.example.fragmentmenu.ReporteFragment"
         android:label="fragment_reporte"
         tools:layout="@layout/fragment_reporte" />
+    <fragment
+        android:id="@+id/facturaFragment"
+        android:name="com.example.fragmentmenu.FacturaFragment"
+        android:label="fragment_factura"
+        tools:layout="@layout/fragment_factura" />
 </navigation>
