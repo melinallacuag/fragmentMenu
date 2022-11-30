@@ -25,16 +25,23 @@ class GrifoFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
-        cardsUsuario.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_perfilFragment)
-        }
-
         cardFacturacion.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_facturaFragment)
         }
 
+
+        cardsInicio.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_mainFragment)
+        }
+        cardsUsuario.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_perfilFragment)
+        }
+        cardsReport.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_reporteFragment)
+        }
+        cardsShop.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_tiendaFragment)
+        }
 
     }
 }

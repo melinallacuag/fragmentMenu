@@ -24,9 +24,9 @@
     <HorizontalScrollView
         android:id="@+id/ScrollCara"
         android:layout_width="match_parent"
-        android:layout_height="100sp"
+        android:layout_height="150dp"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="15dp"
         android:layout_marginEnd="20dp"
         android:fillViewport="true"
         android:orientation="horizontal"
@@ -71,16 +71,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_caranum" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara01"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginLeft="-5sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="-7.5sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#3456CE"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -123,16 +123,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_caranum" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara02"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginLeft="-5sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="-7.5sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#3456CE"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -175,16 +175,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_caranum" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara03"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginLeft="-5sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="-7.5sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#3456CE"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -227,16 +227,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_caranum" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara04"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginLeft="-5sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="-7.5sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#3456CE"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -279,16 +279,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_caranum" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara05"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginLeft="-5sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="-7.5sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#3456CE"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -331,16 +331,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_caranum" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara06"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginLeft="-5sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginLeft="-7.5sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#3456CE"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -384,8 +384,8 @@
     <HorizontalScrollView
         android:id="@+id/ScrollManguera"
         android:layout_width="match_parent"
-        android:layout_height="100sp"
-        android:layout_marginStart="20dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:fillViewport="true"
@@ -431,15 +431,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_fulmag" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas90"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#E1CC16"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -482,15 +482,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_fulmag" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas84"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#E61717"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -533,15 +533,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_fulmag" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/diesel"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#050505"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -584,15 +584,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_fulmag" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas95"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#072DB1"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -635,15 +635,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_fulmag" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas97"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#119C2E"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -686,15 +686,15 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="70sp"
-                        android:layout_height="70sp"
+                        android:layout_width="120sp"
+                        android:layout_height="120sp"
                         android:src="@drawable/icon_fulmag" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/glp"
-                        android:layout_width="30sp"
-                        android:layout_height="30sp"
-                        android:layout_marginTop="-45sp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="-75sp"
                         android:backgroundTint="#E36510"
                         app:cardCornerRadius="50sp"
                         app:cardElevation="10sp">
@@ -764,14 +764,14 @@
     <Button
         android:id="@+id/btnlibre"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:letterSpacing="0.05"
         android:text="LIBRE"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -779,14 +779,14 @@
     <Button
         android:id="@+id/btnsoles"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:letterSpacing="0.05"
         android:text="SOLES"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintStart_toEndOf="@+id/btnlibre"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -794,7 +794,7 @@
     <Button
         android:id="@+id/btngalones"
         android:layout_width="140sp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
@@ -802,7 +802,7 @@
         android:text="GALONES"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -812,14 +812,14 @@
     <Button
         android:id="@+id/btnboleta"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10sp"
         android:letterSpacing="0.05"
         android:text="BOLETA"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -827,14 +827,14 @@
     <Button
         android:id="@+id/btnfactura"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="8dp"
         android:letterSpacing="0.05"
         android:text="FACTURA"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintStart_toEndOf="@+id/btnboleta"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -842,7 +842,7 @@
     <Button
         android:id="@+id/btnfac"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="8dp"
@@ -850,7 +850,7 @@
         android:text="FAC."
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -860,14 +860,14 @@
     <Button
         android:id="@+id/btnserafi"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:letterSpacing="0.05"
         android:text="SERAFI"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnboleta" />
@@ -875,14 +875,14 @@
     <Button
         android:id="@+id/btncanje"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="5sp"
         android:letterSpacing="0.05"
         android:text="CANJE"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintStart_toEndOf="@+id/btnserafi"
         app:layout_constraintTop_toBottomOf="@+id/btnfactura" />
@@ -890,7 +890,7 @@
     <Button
         android:id="@+id/btnncredito"
         android:layout_width="140dp"
-        android:layout_height="45sp"
+        android:layout_height="50dp"
         android:layout_marginStart="24sp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
@@ -898,7 +898,7 @@
         android:text="NOTA CREDITO"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10sp"
+        android:textSize="14dp"
         app:cornerRadius="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

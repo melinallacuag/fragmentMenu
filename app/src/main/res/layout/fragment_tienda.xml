@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -11,6 +9,7 @@
         tools:context=".TiendaFragment">
 
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="783dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,14 +20,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="2"
-            android:rowCount="1"
-            >
+            android:rowCount="1">
+
             <LinearLayout
 
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
+
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/cat_hamburguesa"
                     android:layout_width="match_parent"
@@ -67,43 +66,30 @@
             </LinearLayout>
 
 
-
         </GridLayout>
 
     </ScrollView>
 
 
-
-
     <GridLayout
-        android:id="@+id/gridLayout"
+        android:id="@+id/gridLayout2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginBottom="20sp"
-
-        android:background="@drawable/solid_menu"
-
+        android:layout_height="65dp"
         android:layout_weight="12"
-        android:columnCount="4"
-        android:rowCount="6"
+        android:background="@drawable/solid_menu"
+        android:columnCount="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3"
         app:layout_constraintVertical_bias="1.0">
 
-
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsTienda"
+            android:id="@+id/cardsInicio"
             android:layout_width="1dp"
-            android:backgroundTint="#051E78"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -113,50 +99,21 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
-                    android:src="@drawable/icon_home" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_userperson" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardsReporte"
-            android:layout_width="1dp"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#051E78"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
-                    android:src="@drawable/icon_reporte" />
-
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/cardsUsuario"
             android:layout_width="1dp"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -166,33 +123,21 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="2sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/icon_userperson" />
 
-                <TextView
-                    android:id="@+id/txtusuario"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Usuario"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsGrifo"
+            android:id="@+id/cardsShop"
             android:layout_width="1dp"
-            android:backgroundTint="#051E78"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -202,10 +147,67 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_home" />
+
+                <TextView
+                    android:id="@+id/txttienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:text="Tienda"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardsGrifos"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/icon_gas" />
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardsReport"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_reporte" />
 
 
             </LinearLayout>

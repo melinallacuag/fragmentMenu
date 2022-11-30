@@ -41,7 +41,20 @@
         android:id="@+id/tiendaFragment"
         android:name="com.example.fragmentmenu.TiendaFragment"
         android:label="fragment_tienda"
-        tools:layout="@layout/fragment_tienda" />
+        tools:layout="@layout/fragment_tienda" >
+        <action
+            android:id="@+id/action_tiendaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_grifoFragment"
+            app:destination="@id/grifoFragment" />
+        <action
+            android:id="@+id/action_tiendaFragment_to_reporteFragment"
+            app:destination="@id/reporteFragment" />
+    </fragment>
     <fragment
         android:id="@+id/grifoFragment"
         android:name="com.example.fragmentmenu.GrifoFragment"
@@ -53,6 +66,15 @@
         <action
             android:id="@+id/action_grifoFragment_to_facturaFragment"
             app:destination="@id/facturaFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_reporteFragment"
+            app:destination="@id/reporteFragment" />
     </fragment>
     <fragment
         android:id="@+id/reporteFragment"
