@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_grifo.*
-import kotlinx.android.synthetic.main.fragment_grifo.cardsInicio
-import kotlinx.android.synthetic.main.fragment_grifo.cardsReport
-import kotlinx.android.synthetic.main.fragment_grifo.cardsUsuario
+
 import kotlinx.android.synthetic.main.fragment_perfil.*
 import kotlinx.android.synthetic.main.fragment_tienda.*
 
@@ -27,16 +25,16 @@ class TiendaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        cardsInicio.setOnClickListener{
+        TiendacardsHome.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_tiendaFragment_to_mainFragment)
         }
-        cardsUsuario.setOnClickListener{
+        TiendacardsUsuario.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_tiendaFragment_to_perfilFragment)
         }
-        cardsReport.setOnClickListener {
+        TiendacardsReporte.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_tiendaFragment_to_reporteFragment)
         }
-        cardsGrifos.setOnClickListener {
+        TiendacardsGrifo.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_tiendaFragment_to_grifoFragment)
         }
 

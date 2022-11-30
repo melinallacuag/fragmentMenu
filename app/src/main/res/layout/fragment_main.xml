@@ -47,7 +47,7 @@
                     android:layout_width="80sp"
                     android:layout_height="80sp"
                     android:layout_marginBottom="5sp"
-                    android:src="@drawable/icon_home" />
+                    android:src="@drawable/icon_tienda" />
 
                 <TextView
                     android:id="@+id/tienda"
@@ -182,45 +182,6 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card"
-            android:layout_width="wrap_content"
-            android:layout_height="160dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="8dp"
-            android:layout_marginBottom="20sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="80sp"
-                    android:layout_height="80sp"
-
-                    android:src="@drawable/icon_gas" />
-
-                <TextView
-                    android:id="@+id/text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Grifo"
-                    android:textAlignment="center"
-                    android:textColor="#54565A"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSalir"
@@ -230,6 +191,7 @@
             android:layout_columnWeight="1"
             android:layout_margin="8dp"
             android:layout_marginBottom="20sp"
+
             android:clickable="true"
             android:foreground="@drawable/activitycard"
             app:cardBackgroundColor="#fff"

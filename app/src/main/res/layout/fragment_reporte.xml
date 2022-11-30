@@ -14,33 +14,24 @@
         android:text="@string/hello_blank_fragment" />
 
     <GridLayout
-        android:id="@+id/gridLayout"
+        android:id="@+id/gridLayout2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginBottom="20sp"
+        android:layout_height="65dp"
         android:layout_weight="12"
-
         android:background="@drawable/solid_menu"
-        android:columnCount="4"
-        android:rowCount="6"
+        android:columnCount="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="10dp">
-
+        app:layout_constraintVertical_bias="1.0">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsTienda"
+            android:id="@+id/ReportcardsHome"
             android:layout_width="1dp"
-            android:layout_height="50sp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#051E78"
-            app:cardCornerRadius="20dp">
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,10 +41,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
-                    android:src="@drawable/icon_home" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_inicio" />
 
 
             </LinearLayout>
@@ -61,12 +51,11 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsReporte"
+            android:id="@+id/ReportcardsUsuario"
             android:layout_width="1dp"
-            android:layout_height="50sp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            app:cardCornerRadius="20dp">
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -76,59 +65,53 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
-                    android:src="@drawable/icon_reporte" />
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardsUsuario"
-            android:layout_width="1dp"
-            android:layout_height="50sp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            app:cardCornerRadius="20dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#051E78"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="2sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/icon_userperson" />
 
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ReportcardsReporte"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_reporte" />
                 <TextView
-                    android:id="@+id/txtusuario"
+                    android:id="@+id/txtreporte"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Usuario"
+                    android:layout_marginTop="-5dp"
+                    android:text="Reporte"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsGrifo"
+            android:id="@+id/ReportcardsGrifo"
             android:layout_width="1dp"
-            android:layout_height="50sp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:backgroundTint="#051E78"
-            app:cardCornerRadius="20dp">
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -138,15 +121,43 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/icon_gas" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ReportcardsTienda"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_tienda" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
 
 
     </GridLayout>

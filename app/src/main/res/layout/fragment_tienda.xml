@@ -85,7 +85,31 @@
         app:layout_constraintVertical_bias="1.0">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsInicio"
+            android:id="@+id/TiendacardsHome"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_inicio" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/TiendacardsUsuario"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
@@ -109,7 +133,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsUsuario"
+            android:id="@+id/TiendacardsTienda"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
@@ -125,31 +149,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/icon_userperson" />
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardsShop"
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#051E78"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/icon_home" />
+                    android:src="@drawable/icon_tienda" />
 
                 <TextView
                     android:id="@+id/txttienda"
@@ -166,7 +166,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsGrifos"
+            android:id="@+id/TiendacardsGrifo"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"
@@ -191,7 +191,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsReport"
+            android:id="@+id/TiendacardsReporte"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_rowWeight="1"

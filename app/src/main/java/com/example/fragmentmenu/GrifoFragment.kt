@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_grifo.*
 import kotlinx.android.synthetic.main.fragment_perfil.*
-import kotlinx.android.synthetic.main.fragment_perfil.cardsUsuario
 
 
 class GrifoFragment : Fragment() {
@@ -30,16 +29,16 @@ class GrifoFragment : Fragment() {
         }
 
 
-        cardsInicio.setOnClickListener{
+        GrifocardsHome.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_mainFragment)
         }
-        cardsUsuario.setOnClickListener{
+        GrifocardsUsuario.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_perfilFragment)
         }
-        cardsReport.setOnClickListener {
+        GrifocardsReporte.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_reporteFragment)
         }
-        cardsShop.setOnClickListener {
+        GrifocardsTienda.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_tiendaFragment)
         }
 

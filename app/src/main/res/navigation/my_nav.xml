@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_perfilFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_reporteFragment"
+            app:destination="@id/reporteFragment" />
     </fragment>
     <fragment
         android:id="@+id/tiendaFragment"
@@ -80,7 +83,20 @@
         android:id="@+id/reporteFragment"
         android:name="com.example.fragmentmenu.ReporteFragment"
         android:label="fragment_reporte"
-        tools:layout="@layout/fragment_reporte" />
+        tools:layout="@layout/fragment_reporte" >
+        <action
+            android:id="@+id/action_reporteFragment_to_grifoFragment"
+            app:destination="@id/grifoFragment" />
+        <action
+            android:id="@+id/action_reporteFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_reporteFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_reporteFragment_to_tiendaFragment"
+            app:destination="@id/tiendaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/facturaFragment"
         android:name="com.example.fragmentmenu.FacturaFragment"

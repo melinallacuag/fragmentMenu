@@ -260,34 +260,24 @@
         app:layout_constraintTop_toBottomOf="@+id/input_emp" />
 
     <GridLayout
-        android:id="@+id/gridLayout"
+        android:id="@+id/gridLayout2"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginRight="10sp"
-        android:layout_marginBottom="20sp"
-
-        android:background="@drawable/solid_menu"
-
+        android:layout_height="65dp"
         android:layout_weight="12"
-        android:columnCount="4"
-        android:rowCount="6"
+        android:background="@drawable/solid_menu"
+        android:columnCount="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsTienda"
+            android:id="@+id/PerfilcardsHome"
             android:layout_width="1dp"
-            android:backgroundTint="#051E78"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -297,23 +287,22 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
-                    android:src="@drawable/icon_home" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_inicio" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsReporte"
+            android:id="@+id/PerfilcardsReporte"
             android:layout_width="1dp"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -323,24 +312,20 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/icon_reporte" />
 
 
-
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsUsuario"
+            android:id="@+id/PerfilcardsUsuario"
             android:layout_width="1dp"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -350,33 +335,30 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="2sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/icon_userperson" />
-
                 <TextView
-                    android:id="@+id/txtusuario"
+                    android:id="@+id/txtperfil"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Usuario"
+                    android:layout_marginTop="-5dp"
+                    android:text="Perfil"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="12sp"
+                    android:textSize="12dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardsGrifo"
+            android:id="@+id/PerfilcardsGrifo"
             android:layout_width="1dp"
-            android:backgroundTint="#051E78"
-            android:layout_height="50sp"
-            app:cardCornerRadius="20dp"
+            android:layout_height="wrap_content"
             android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            >
+            android:layout_columnWeight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -386,9 +368,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="30sp"
-                    android:layout_height="30sp"
-                    android:layout_marginBottom="5sp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:src="@drawable/icon_gas" />
 
 
@@ -398,6 +379,29 @@
 
 
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PerfilcardsTienda"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_tienda" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
     </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
