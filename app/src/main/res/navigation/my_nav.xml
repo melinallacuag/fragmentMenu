@@ -101,5 +101,14 @@
         android:id="@+id/facturaFragment"
         android:name="com.example.fragmentmenu.FacturaFragment"
         android:label="fragment_factura"
-        tools:layout="@layout/fragment_factura" />
+        tools:layout="@layout/fragment_factura" >
+        <action
+            android:id="@+id/action_facturaFragment_to_solesFragment"
+            app:destination="@id/solesFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/solesFragment"
+        android:name="com.example.fragmentmenu.SolesFragment"
+        android:label="fragment_soles"
+        tools:layout="@layout/fragment_soles" />
 </navigation>
