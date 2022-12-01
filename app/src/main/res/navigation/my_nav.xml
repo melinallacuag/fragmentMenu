@@ -111,4 +111,13 @@
         android:name="com.example.fragmentmenu.SolesFragment"
         android:label="fragment_soles"
         tools:layout="@layout/fragment_soles" />
+    <dialog
+        android:id="@+id/galonesFragment"
+        android:name="com.example.fragmentmenu.GalonesFragment"
+        android:label="fragment_galones"
+        tools:layout="@layout/fragment_galones" >
+        <action
+            android:id="@+id/action_galonesFragment_to_facturaFragment"
+            app:destination="@id/facturaFragment" />
+    </dialog>
 </navigation>
