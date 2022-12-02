@@ -11,60 +11,318 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="783dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <GridLayout
+            android:id="@+id/gridLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:rowCount="1">
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="3"
+            android:columnCount="1"
+            android:rowCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.271">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cat_gaseosas"
+                android:layout_width="wrap_content"
+                android:layout_height="140sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
 
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:id="@+id/cat_hamburguesa"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="40sp"
-                    android:layout_marginEnd="20dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="center"
-                    android:src="@drawable/cat_licores"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/roudimage" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/texthamburguesa"
-                    android:layout_width="200dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/border"
-                    android:backgroundTint="#CCD9D9D9"
-                    android:padding="15sp"
-                    android:text="HAMBURGUESA"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="14dp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="@+id/cat_hamburguesa"
-                    app:layout_constraintEnd_toEndOf="@+id/cat_hamburguesa"
-                    app:layout_constraintHorizontal_bias="0.497"
-                    app:layout_constraintStart_toStartOf="@+id/cat_hamburguesa"
-                    app:layout_constraintTop_toTopOf="@+id/cat_hamburguesa" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
 
+                        android:scaleType="center"
+                        android:src="@drawable/cat_gaseosa" />
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/textgaseosas"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:backgroundTint="#CCD9D9D9"
+                        android:layout_marginTop="-100dp"
+                        android:padding="15dp"
+                        android:text="GASEOSAS"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/cat_gaseosa"
+                        app:layout_constraintEnd_toEndOf="@+id/cat_gaseosa"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="@+id/cat_gaseosa"
+                        app:layout_constraintTop_toTopOf="@+id/cat_gaseosa" />
 
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cat_bebidas"
+                android:layout_width="wrap_content"
+                android:layout_height="140sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:src="@drawable/cat_licor" />
+
+                    <TextView
+                        android:id="@+id/textbebidas"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:backgroundTint="#CCD9D9D9"
+                        android:padding="15dp"
+                        android:text="LICORES"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-100dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/cat_bebidas"
+                        app:layout_constraintEnd_toEndOf="@+id/cat_bebidas"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="@+id/cat_bebidas"
+                        app:layout_constraintTop_toTopOf="@+id/cat_bebidas" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardGalletas"
+                android:layout_width="wrap_content"
+                android:layout_height="140sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:src="@drawable/cat_snak" />
+
+                    <TextView
+                        android:id="@+id/textgalletas"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:backgroundTint="#CCD9D9D9"
+                        android:padding="15dp"
+                        android:text="GALLETAS"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        android:layout_marginTop="-100dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/cat_snak"
+                        app:layout_constraintEnd_toEndOf="@+id/cat_snak"
+                        app:layout_constraintStart_toStartOf="@+id/cat_snak"
+                        app:layout_constraintTop_toTopOf="@+id/cat_snak" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cat_hamburguesa"
+                android:layout_width="wrap_content"
+                android:layout_height="140sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:src="@drawable/cat_licores" />
+
+                    <TextView
+                        android:id="@+id/texthamburguesa"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:backgroundTint="#CCD9D9D9"
+                        android:padding="15sp"
+                        android:layout_marginTop="-100dp"
+                        android:text="HAMBURGUESA"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/cat_hamburguesa"
+                        app:layout_constraintEnd_toEndOf="@+id/cat_hamburguesa"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="@+id/cat_hamburguesa"
+                        app:layout_constraintTop_toTopOf="@+id/cat_hamburguesa" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cat_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="140sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:scaleType="center"
+                        android:src="@drawable/cat_gaseosa" />
+
+                    <TextView
+                        android:id="@+id/textgaseosa"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:backgroundTint="#CCD9D9D9"
+                        android:layout_marginTop="-100dp"
+                        android:padding="15dp"
+                        android:text="GASEOSAS"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/cat_gaseosa"
+                        app:layout_constraintEnd_toEndOf="@+id/cat_gaseosa"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="@+id/cat_gaseosa"
+                        app:layout_constraintTop_toTopOf="@+id/cat_gaseosa" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/auto2"
+                android:layout_width="wrap_content"
+                android:layout_height="140sp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:src="@drawable/cat_snak" />
+
+                    <TextView
+                        android:id="@+id/textsnack"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/border"
+                        android:backgroundTint="#CCD9D9D9"
+                        android:padding="15dp"
+                        android:text="GALLETAS"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp"
+                        android:layout_marginTop="-100dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/cat_snak"
+                        app:layout_constraintEnd_toEndOf="@+id/cat_snak"
+                        app:layout_constraintStart_toStartOf="@+id/cat_snak"
+                        app:layout_constraintTop_toTopOf="@+id/cat_snak" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </GridLayout>
 
@@ -133,39 +391,6 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/TiendacardsTienda"
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#051E78"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/icon_tienda" />
-
-                <TextView
-                    android:id="@+id/txttienda"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-5dp"
-                    android:text="Tienda"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="12dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
             android:id="@+id/TiendacardsGrifo"
             android:layout_width="1dp"
             android:layout_height="wrap_content"
@@ -213,7 +438,38 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/TiendacardsTienda"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_tienda" />
+
+                <TextView
+                    android:id="@+id/txttienda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-5dp"
+                    android:text="Tienda"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
     </GridLayout>

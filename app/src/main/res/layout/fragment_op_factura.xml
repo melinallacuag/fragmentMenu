@@ -7,7 +7,7 @@
     tools:context=".OpFacturaFragment">
 
     <LinearLayout
-        android:layout_width="380dp"
+        android:layout_width="350sp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:orientation="vertical"
@@ -63,8 +63,8 @@
 
         <EditText
             android:id="@+id/inputplaca"
-            android:layout_width="260dp"
-            android:layout_height="50sp"
+            android:layout_width="260sp"
+            android:layout_height="55sp"
             android:background="@drawable/border"
             android:drawablePadding="12sp"
             android:hint="Ingresar N° RUC"
@@ -76,8 +76,8 @@
             android:textSize="15sp" />
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="60dp"
+            android:layout_width="100sp"
+            android:layout_height="50dp"
             android:text="SUNAT"
             android:layout_marginStart="10sp"
 

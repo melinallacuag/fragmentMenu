@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_main.*
 
@@ -34,7 +35,10 @@ class MainFragment : Fragment() {
         cardReporte.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_mainFragment_to_reporteFragment)
         }
-
+        cardSalir.setOnClickListener{
+            val showsalir = SalirFragment()
+            showsalir.show((activity as AppCompatActivity).supportFragmentManager,"shop")
+        }
 
     }
 

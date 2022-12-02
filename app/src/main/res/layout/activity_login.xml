@@ -28,7 +28,7 @@ tools:context=".Login">
     <ImageView
         android:id="@+id/logoGrifo"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="100sp"
         app:srcCompat="@drawable/robles_sinfondo" />
 
     <TextView
@@ -46,8 +46,8 @@ tools:context=".Login">
     <EditText
         android:id="@+id/usuario"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="20sp"
         android:background="@drawable/border"
         android:hint="Ingresar Usuario"
         android:inputType="text"
@@ -61,8 +61,8 @@ tools:context=".Login">
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="10sp"
         android:background="@drawable/border"
         android:drawablePadding="10sp"
         android:hint="Ingresar Contraseña"
@@ -75,8 +75,8 @@ tools:context=".Login">
     <Button
         android:id="@+id/btningresar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="20sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="15sp"
 
         android:letterSpacing="0.08"
         android:text="Ingresar"

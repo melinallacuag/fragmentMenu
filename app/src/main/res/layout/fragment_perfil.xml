@@ -295,31 +295,6 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/PerfilcardsReporte"
-            android:layout_width="1dp"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#051E78"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/icon_reporte" />
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/PerfilcardsUsuario"
             android:layout_width="1dp"
@@ -352,7 +327,6 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
         <androidx.cardview.widget.CardView
             android:id="@+id/PerfilcardsGrifo"
             android:layout_width="1dp"
@@ -376,9 +350,29 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PerfilcardsReporte"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#051E78"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_reporte" />
 
 
+            </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
             android:id="@+id/PerfilcardsTienda"
             android:layout_width="1dp"
