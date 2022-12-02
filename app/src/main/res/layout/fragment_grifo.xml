@@ -47,7 +47,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#E7E7F9"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -61,7 +61,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_facturacion" />
+                        android:src="@drawable/icon_factura" />
 
                     <TextView
                         android:id="@+id/txttienda"
@@ -87,7 +87,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#E3E3F8"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -127,7 +127,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#C6ECE5"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -167,7 +167,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#FBDFA1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -181,7 +181,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_cambioturno" />
+                        android:src="@drawable/icon_turno" />
 
                     <TextView
                         android:id="@+id/cambioturno"
@@ -207,7 +207,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#CDE0F3"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -221,7 +221,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_configuracion" />
+                        android:src="@drawable/icon_ajuste" />
 
                     <TextView
                         android:id="@+id/txtconfiguracion"
@@ -247,7 +247,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#FBDFA1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -261,7 +261,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_turno" />
+                        android:src="@drawable/icon_turnodia" />
 
                     <TextView
                         android:id="@+id/txtiniciodia"
@@ -287,7 +287,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#FBDFA1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -327,7 +327,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#E3E3F8"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -367,7 +367,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#FBDFA1"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -407,7 +407,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#E5ECB6"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -421,7 +421,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_consultarcomp" />
+                        android:src="@drawable/icon_consulta" />
 
                     <TextView
                         android:id="@+id/txtConsultarComp"
@@ -487,7 +487,7 @@
                 android:layout_marginBottom="50sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#fff"
+                app:cardBackgroundColor="#CDDFF2"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -501,7 +501,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_shop" />
+                        android:src="@drawable/icon_shoptienda" />
 
                     <TextView
                         android:id="@+id/txtShop"
