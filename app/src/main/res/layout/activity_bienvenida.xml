@@ -57,7 +57,7 @@
         android:lineHeight="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
-        android:fontFamily="@font/nunito_light"
+        android:fontFamily="@font/nunito_semibold"
         android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy."
         android:textAlignment="center"
         android:textColor="#3C4048"
