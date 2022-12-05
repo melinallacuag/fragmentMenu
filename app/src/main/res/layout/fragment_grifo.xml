@@ -23,11 +23,10 @@
         <GridLayout
             android:id="@+id/gridLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30sp"
-            android:layout_marginTop="30sp"
-            android:layout_marginRight="30sp"
-            android:layout_marginBottom="100sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
             android:layout_weight="12"
             android:columnCount="2"
             android:rowCount="6"
@@ -45,7 +44,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#7878E7"
@@ -69,9 +68,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Facturación"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
                         android:textColor="#fff"
-                        android:textSize="16sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -85,7 +85,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#EF6060"
@@ -109,9 +109,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cierre X"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
                         android:textColor="#fff"
-                        android:textSize="16sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -125,10 +126,10 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#C6ECE5"
+                app:cardBackgroundColor="#95E5D6"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -142,16 +143,17 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_z" />
+                        android:src="@drawable/icon_cierrez" />
 
                     <TextView
                         android:id="@+id/txtcierrez"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cierre Z"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -165,7 +167,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#92E653"
@@ -189,9 +191,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cambio Turno"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -205,10 +208,10 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#AB8FC2"
+                app:cardBackgroundColor="#8660DD"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -222,16 +225,17 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_ajuste" />
+                        android:src="@drawable/icon_configlado" />
 
                     <TextView
                         android:id="@+id/txtconfiguracion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Configuración Lado"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -245,7 +249,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#FBDFA1"
@@ -269,9 +273,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Inicio Dia"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -285,10 +290,10 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#7DE753"
+                app:cardBackgroundColor="#4D4AF7"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -302,16 +307,17 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_cajadeposito" />
+                        android:src="@drawable/icon_cajafuerte" />
 
                     <TextView
                         android:id="@+id/txtDeposito"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Deposito"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -325,10 +331,10 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#E3E3F8"
+                app:cardBackgroundColor="#F29646"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -342,16 +348,17 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_fidelizacion" />
+                        android:src="@drawable/icon_fidelizacionn" />
 
                     <TextView
                         android:id="@+id/txtFidelizacion"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Fidelización"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -365,7 +372,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#FBDFA1"
@@ -389,9 +396,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Anular"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -405,7 +413,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:layout_margin="8sp"
-                android:layout_marginBottom="30sp"
+                android:layout_marginBottom="20sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#E5ECB6"
@@ -429,9 +437,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Consultar Comprobante"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
@@ -509,9 +518,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tienda"
+                        android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
-                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
