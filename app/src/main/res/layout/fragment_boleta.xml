@@ -9,7 +9,10 @@
     <LinearLayout
         android:layout_width="380sp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,14 +22,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BOLETA"
-            android:textSize="24sp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_black"
+            android:textColor="#071C65"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
-            android:text="ID Cliente o DNI:"
+            android:text="ID Cliente:"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#071C65"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -40,16 +47,114 @@
             android:hint="Ingresar ID Cliente"
             android:inputType="number"
             android:paddingLeft="20sp"
-            android:textColor="@color/black"
-            android:textColorHint="#3C4048"
-            android:textSize="15sp" />
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="N° RUC:"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#071C65"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/inputplaca"
+                android:layout_width="280dp"
+                android:layout_height="50sp"
+                android:background="@drawable/border"
+                android:hint="Ingresar N° RUC"
+                android:inputType="number"
+                android:paddingLeft="20sp"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="#123456"
+                android:textColorHint="#404143"
+                android:textSize="14sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUNAT"
+                android:layout_gravity="end"
+                android:layout_marginStart="10sp"
+                android:fontFamily="@font/nunito_extrabold"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
+            android:text="N° Tarjeta:"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#071C65"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputkilometro"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/border"
+            android:drawablePadding="12sp"
+            android:hint="Ingresar N° Tarjeta"
+            android:inputType="number"
+            android:paddingLeft="20sp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Razon Social"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#071C65"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputrazonsocial"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/border"
+            android:drawablePadding="12sp"
+            android:hint="Ingresar Razon Social"
+            android:inputType="text"
+            android:paddingLeft="20sp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
             android:text="Dirección"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#071C65"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -63,15 +168,18 @@
             android:hint="Ingresar Dirección"
             android:inputType="text"
             android:paddingLeft="20sp"
-            android:textColor="@color/black"
-            android:textColorHint="#3C4048"
-            android:textSize="15sp" />
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
-            android:text="observación"
+            android:text="Observacion"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#071C65"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -85,22 +193,23 @@
             android:hint="Ingresar Observación"
             android:inputType="text"
             android:paddingLeft="20sp"
-            android:textColor="@color/black"
-            android:textColorHint="#3C4048"
-            android:textSize="15sp" />
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#123456"
+            android:textColorHint="#404143"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btntipopago"
             android:layout_width="match_parent"
             android:layout_height="50sp"
-            android:layout_gravity="end"
             android:layout_marginTop="10sp"
             android:gravity="center"
             android:backgroundTint="#0FA10A"
             android:text="Tipo de pago"
-            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_extrabold"
+            android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/dialogDismiss_button"
@@ -110,8 +219,9 @@
             android:layout_marginTop="10sp"
             android:gravity="center"
             android:text="Aceptar"
-            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_extrabold"
+            android:textAllCaps="true"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
