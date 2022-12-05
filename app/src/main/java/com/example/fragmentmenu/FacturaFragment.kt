@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_factura.*
+import kotlinx.android.synthetic.main.fragment_grifo.*
 
 
 class FacturaFragment : Fragment() {
@@ -44,6 +46,9 @@ class FacturaFragment : Fragment() {
             val shoboleta = BoletaFragment()
             shoboleta.show((activity as AppCompatActivity).supportFragmentManager,"boleta")
 
+        }
+        carddetalles.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_facturaFragment_to_detalleOpFacturaFragment)
         }
     }
 

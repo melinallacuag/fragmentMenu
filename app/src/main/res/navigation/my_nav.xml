@@ -105,6 +105,9 @@
         <action
             android:id="@+id/action_facturaFragment_to_solesFragment"
             app:destination="@id/solesFragment" />
+        <action
+            android:id="@+id/action_facturaFragment_to_detalleOpFacturaFragment"
+            app:destination="@id/detalleOpFacturaFragment" />
     </fragment>
     <dialog
         android:id="@+id/solesFragment"
@@ -120,4 +123,9 @@
             android:id="@+id/action_galonesFragment_to_facturaFragment"
             app:destination="@id/facturaFragment" />
     </dialog>
+    <fragment
+        android:id="@+id/detalleOpFacturaFragment"
+        android:name="com.example.fragmentmenu.DetalleOpFacturaFragment"
+        android:label="fragment_detalle_op_factura"
+        tools:layout="@layout/fragment_detalle_op_factura" />
 </navigation>
