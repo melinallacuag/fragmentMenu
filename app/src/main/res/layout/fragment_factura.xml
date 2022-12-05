@@ -13,6 +13,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:text="CARA"
+        android:fontFamily="@font/nunito_black"
         android:textColor="#3C4048"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -56,11 +57,11 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="15dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
 
                 <LinearLayout
@@ -72,18 +73,18 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_caranum" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara01"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginLeft="-6.5sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#3456CE"
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
                         app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                     >
 
                         <TextView
                             android:layout_width="match_parent"
@@ -92,7 +93,8 @@
                             android:text="01"
                             android:textAlignment="center"
                             android:textColor="#FFF"
-                            android:textSize="14sp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </androidx.cardview.widget.CardView>
@@ -108,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -124,27 +126,27 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_caranum" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara02"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginLeft="-6.5sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#3456CE"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="02"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:textSize="15sp"
                             android:textAlignment="center"
                             android:textColor="#FFF"
-                            android:textSize="14sp"
                             android:textStyle="bold" />
 
                     </androidx.cardview.widget.CardView>
@@ -160,7 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -176,18 +178,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_caranum" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara03"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginLeft="-6.5sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#3456CE"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -196,7 +197,8 @@
                             android:text="03"
                             android:textAlignment="center"
                             android:textColor="#FFF"
-                            android:textSize="14sp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </androidx.cardview.widget.CardView>
@@ -212,7 +214,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -228,18 +230,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_caranum" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara04"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginLeft="-6.5sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#3456CE"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -248,7 +249,8 @@
                             android:text="04"
                             android:textAlignment="center"
                             android:textColor="#FFF"
-                            android:textSize="14sp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </androidx.cardview.widget.CardView>
@@ -280,18 +282,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_caranum" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara05"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginLeft="-6.5sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#3456CE"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -300,7 +301,8 @@
                             android:text="05"
                             android:textAlignment="center"
                             android:textColor="#FFF"
-                            android:textSize="14sp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </androidx.cardview.widget.CardView>
@@ -316,7 +318,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -332,18 +334,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_caranum" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/numcara06"
                         android:layout_width="40sp"
                         android:layout_height="40sp"
-                        android:layout_marginLeft="-6.5sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#3456CE"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -352,7 +353,8 @@
                             android:text="06"
                             android:textAlignment="center"
                             android:textColor="#FFF"
-                            android:textSize="14sp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                     </androidx.cardview.widget.CardView>
@@ -373,6 +375,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
         android:text="MANGUERA"
+        android:fontFamily="@font/nunito_black"
         android:textColor="#3C4048"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -416,7 +419,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -432,23 +435,24 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_fulmag" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas90"
                         android:layout_width="50sp"
                         android:layout_height="50sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#E1CC16"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#EDE431"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="GAS 90"
+                            android:fontFamily="@font/nunito_black"
                             android:textAlignment="center"
                             android:textColor="#FFF"
                             android:textSize="10sp"
@@ -467,7 +471,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -483,23 +487,24 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_fulmag" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas84"
                         android:layout_width="50sp"
                         android:layout_height="50sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#E61717"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#E80909"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:text="GAS 84"
+                            android:fontFamily="@font/nunito_black"
                             android:textAlignment="center"
                             android:textColor="#FFF"
                             android:textSize="10sp"
@@ -518,7 +523,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -534,17 +539,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_fulmag" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/diesel"
                         android:layout_width="50sp"
                         android:layout_height="50sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#050505"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#000000"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -553,6 +558,7 @@
                             android:text="Diesel"
                             android:textAlignment="center"
                             android:textColor="#FFF"
+                            android:fontFamily="@font/nunito_black"
                             android:textSize="10sp"
                             android:textStyle="bold" />
 
@@ -569,7 +575,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -585,17 +591,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_fulmag" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas95"
                         android:layout_width="50sp"
                         android:layout_height="50sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#072DB1"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#0626F1"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -604,6 +610,7 @@
                             android:text="GAS 95"
                             android:textAlignment="center"
                             android:textColor="#FFF"
+                            android:fontFamily="@font/nunito_black"
                             android:textSize="10sp"
                             android:textStyle="bold" />
 
@@ -620,7 +627,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -636,17 +643,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_fulmag" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/gas97"
                         android:layout_width="50sp"
                         android:layout_height="50sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#119C2E"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#34B504"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -655,6 +662,7 @@
                             android:text="GAS 97"
                             android:textAlignment="center"
                             android:textColor="#FFF"
+                            android:fontFamily="@font/nunito_black"
                             android:textSize="10sp"
                             android:textStyle="bold" />
 
@@ -671,7 +679,7 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="8sp"
+                android:layout_margin="5sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
@@ -687,17 +695,17 @@
 
                     <ImageView
                         android:layout_width="100sp"
-                        android:layout_height="100sp"
-                        android:src="@drawable/icon_fulmag" />
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/glp"
                         android:layout_width="50sp"
                         android:layout_height="50sp"
-                        android:layout_marginTop="-65sp"
-                        android:backgroundTint="#E36510"
-                        app:cardCornerRadius="50sp"
-                        app:cardElevation="10sp">
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#ED4B22"
+                        app:cardCornerRadius="50sp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -706,6 +714,7 @@
                             android:text="GLP"
                             android:textAlignment="center"
                             android:textColor="#FFF"
+                            android:fontFamily="@font/nunito_black"
                             android:textSize="10sp"
                             android:textStyle="bold" />
 
@@ -727,8 +736,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:text="MODALIDAD"
+        android:fontFamily="@font/nunito_black"
         android:textColor="#3C4048"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -769,10 +779,11 @@
         android:layout_marginTop="5dp"
         android:letterSpacing="0.05"
         android:text="LIBRE"
+        android:fontFamily="@font/nunito_extrabold"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
-        app:cornerRadius="10sp"
+        app:cornerRadius="5sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -783,10 +794,11 @@
         android:layout_marginTop="5dp"
         android:letterSpacing="0.05"
         android:text="SOLES"
+        android:fontFamily="@font/nunito_extrabold"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
-        app:cornerRadius="10sp"
+        app:cornerRadius="5sp"
         app:layout_constraintEnd_toStartOf="@+id/btngalones"
         app:layout_constraintStart_toEndOf="@+id/btnlibre"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -799,10 +811,11 @@
         android:layout_marginEnd="20dp"
         android:letterSpacing="0.05"
         android:text="GALONES"
+        android:fontFamily="@font/nunito_extrabold"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
-        app:cornerRadius="10sp"
+        app:cornerRadius="5sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
