@@ -15,9 +15,10 @@
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
         <GridLayout
             android:id="@+id/gridLayout"
@@ -47,7 +48,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#E7E7F9"
+                app:cardBackgroundColor="#7878E7"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -61,7 +62,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_factura" />
+                        android:src="@drawable/icon_facturas" />
 
                     <TextView
                         android:id="@+id/txttienda"
@@ -87,7 +88,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#E3E3F8"
+                app:cardBackgroundColor="#EF6060"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -101,7 +102,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_x" />
+                        android:src="@drawable/icon_cierrex" />
 
                     <TextView
                         android:id="@+id/txtcierrex"
@@ -109,7 +110,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cierre X"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
+                        android:textColor="#fff"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -149,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cierre Z"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
+                        android:textColor="#FFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -167,7 +168,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#FBDFA1"
+                app:cardBackgroundColor="#92E653"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -181,7 +182,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_turno" />
+                        android:src="@drawable/icon_cambioturno" />
 
                     <TextView
                         android:id="@+id/cambioturno"
@@ -189,7 +190,7 @@
                         android:layout_height="wrap_content"
                         android:text="Cambio Turno"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
+                        android:textColor="#FFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -207,7 +208,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#CDE0F3"
+                app:cardBackgroundColor="#AB8FC2"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -229,7 +230,7 @@
                         android:layout_height="wrap_content"
                         android:text="Configuración Lado"
                         android:textAlignment="center"
-                        android:textColor="#54565A"
+                        android:textColor="#FFF"
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
@@ -287,7 +288,7 @@
                 android:layout_marginBottom="30sp"
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
-                app:cardBackgroundColor="#FBDFA1"
+                app:cardBackgroundColor="#7DE753"
                 app:cardCornerRadius="15dp"
                 app:cardElevation="5sp">
 
@@ -301,7 +302,7 @@
                         android:layout_width="80sp"
                         android:layout_height="80sp"
                         android:layout_marginBottom="5sp"
-                        android:src="@drawable/icon_deposito" />
+                        android:src="@drawable/icon_cajadeposito" />
 
                     <TextView
                         android:id="@+id/txtDeposito"
