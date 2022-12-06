@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_black"
-            android:text="FACTURACIÓN"
+            android:text="FACTURACIÓN VENTAS"
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textSize="20dp" />
@@ -878,7 +878,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginEnd="20dp"
         android:letterSpacing="0.05"
-        android:text="FAC."
+        android:text="FAC"
         android:fontFamily="@font/nunito_extrabold"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -894,7 +894,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="2dp"
         android:letterSpacing="0.05"
-        android:text="SERAFI"
+        android:text="SERAFIN"
         android:fontFamily="@font/nunito_extrabold"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
@@ -926,7 +926,7 @@
         android:layout_height="50sp"
         android:layout_marginTop="2dp"
         android:letterSpacing="0.05"
-        android:text="NOTA CREDITO"
+        android:text="NOTA DESPACHO"
         android:fontFamily="@font/nunito_extrabold"
         android:layout_marginEnd="20dp"
         android:textAlignment="center"
@@ -1015,7 +1015,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btncanje"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.058">
 
         <GridLayout
@@ -1039,6 +1039,8 @@
                 android:id="@+id/card01"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
