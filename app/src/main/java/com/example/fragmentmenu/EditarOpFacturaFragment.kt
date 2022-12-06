@@ -26,7 +26,13 @@ class EditarOpFacturaFragment : Fragment() {
 
         btneditarfactura.setOnClickListener{
             val showeditarfactura = EditarModalFacturaFragment()
-            showeditarfactura.show((activity as AppCompatActivity).supportFragmentManager,"shop")
+            showeditarfactura.show((activity as AppCompatActivity).supportFragmentManager,"editar factura")
+
+        }
+
+        btneditargalones.setOnClickListener{
+            val showeditargalones = EditarModalGalonesFragment()
+            showeditargalones.show((activity as AppCompatActivity).supportFragmentManager,"editar galones")
 
         }
 
