@@ -5,13 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FacturaFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/solid_bar"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_black"
+            android:text="FACTURACIÓN"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+    </LinearLayout>
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="100dp"
         android:text="CARA"
         android:fontFamily="@font/nunito_black"
         android:textColor="#3C4048"
@@ -423,7 +440,7 @@
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="15dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
 
                 <LinearLayout
@@ -475,7 +492,7 @@
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="15dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
 
                 <LinearLayout
@@ -527,7 +544,7 @@
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="15dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
 
                 <LinearLayout
@@ -579,7 +596,7 @@
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="15dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
 
                 <LinearLayout
@@ -631,7 +648,7 @@
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="15dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
 
                 <LinearLayout
@@ -683,7 +700,7 @@
                 android:clickable="true"
                 android:foreground="@drawable/activitycard"
                 app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="15dp"
+                app:cardCornerRadius="10dp"
                 app:cardElevation="5sp">
 
                 <LinearLayout
@@ -992,8 +1009,8 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -1011,7 +1028,7 @@
             android:layout_marginEnd="10sp"
             android:columnCount="12"
             android:orientation="vertical"
-            android:rowCount="3"
+            android:rowCount="2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -1028,7 +1045,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/solid_menu"
                 android:backgroundTint="@color/white"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:padding="8sp"
                 android:textAlignment="center"
@@ -1106,7 +1123,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/solid_menu"
                 android:backgroundTint="@color/white"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:padding="8sp"
                 android:textAlignment="center"
@@ -1183,7 +1200,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/solid_menu"
                 android:backgroundTint="@color/white"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:padding="8sp"
                 android:textAlignment="center"
@@ -1260,7 +1277,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/solid_menu"
                 android:backgroundTint="@color/white"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:padding="8sp"
                 android:textAlignment="center"
@@ -1337,7 +1354,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/solid_menu"
                 android:backgroundTint="@color/white"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:padding="8sp"
                 android:textAlignment="center"
@@ -1414,7 +1431,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/solid_menu"
                 android:backgroundTint="@color/white"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:padding="8sp"
                 android:textAlignment="center"
@@ -1485,7 +1502,7 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/solid_menu"
                 android:backgroundTint="@color/white"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:padding="8sp"
                 android:textAlignment="center"
