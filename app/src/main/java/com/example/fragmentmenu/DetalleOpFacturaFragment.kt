@@ -30,6 +30,10 @@ class DetalleOpFacturaFragment : Fragment() {
 
         }
 
+        btneditar.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_detalleOpFacturaFragment_to_editarOpFacturaFragment)
+        }
+
     }
 
 }

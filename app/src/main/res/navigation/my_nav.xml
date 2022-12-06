@@ -127,5 +127,14 @@
         android:id="@+id/detalleOpFacturaFragment"
         android:name="com.example.fragmentmenu.DetalleOpFacturaFragment"
         android:label="fragment_detalle_op_factura"
-        tools:layout="@layout/fragment_detalle_op_factura" />
+        tools:layout="@layout/fragment_detalle_op_factura" >
+        <action
+            android:id="@+id/action_detalleOpFacturaFragment_to_editarOpFacturaFragment"
+            app:destination="@id/editarOpFacturaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarOpFacturaFragment"
+        android:name="com.example.fragmentmenu.EditarOpFacturaFragment"
+        android:label="fragment_editar_op_factura"
+        tools:layout="@layout/fragment_editar_op_factura" />
 </navigation>

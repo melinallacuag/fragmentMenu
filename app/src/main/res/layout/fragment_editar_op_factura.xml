@@ -1,1560 +1,920 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".EditarOpFacturaFragment">
-
-<TextView
-    android:id="@+id/textView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="10dp"
-    android:text="CARA"
-    android:fontFamily="@font/nunito_black"
-    android:textColor="#3C4048"
-    android:textSize="16sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-<HorizontalScrollView
-    android:id="@+id/ScrollCara"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="120sp"
-    android:layout_marginStart="15dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="20dp"
-    android:fillViewport="true"
-    android:orientation="horizontal"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="1.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView">
+    android:layout_height="match_parent"
+    tools:context=".EditarOpFacturaFragment">
 
-    <GridLayout
-        android:id="@+id/gridCara"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="12"
-        android:columnCount="15"
-        android:rowCount="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="CARA"
+        android:textColor="#3C4048"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.032">
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cara01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelcara" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/numcara01"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginLeft="-4.5sp"
-                    android:layout_marginTop="-50sp"
-                    android:backgroundTint="#3DC0D8"
-                    app:cardCornerRadius="50sp"
-                    >
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="01"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cara02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelcara" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/numcara02"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginLeft="-4.5sp"
-                    android:layout_marginTop="-50sp"
-                    android:backgroundTint="#3DC0D8"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="02"
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="15sp"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cara03"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelcara" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/numcara03"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginLeft="-4.5sp"
-                    android:layout_marginTop="-50sp"
-                    android:backgroundTint="#3DC0D8"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="03"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cara04"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelcara" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/numcara04"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginLeft="-4.5sp"
-                    android:layout_marginTop="-50sp"
-                    android:backgroundTint="#3DC0D8"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="04"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cara05"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="8sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelcara" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/numcara05"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginLeft="-4.5sp"
-                    android:layout_marginTop="-50sp"
-                    android:backgroundTint="#3DC0D8"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="05"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cara06"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelcara" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/numcara06"
-                    android:layout_width="40sp"
-                    android:layout_height="40sp"
-                    android:layout_marginLeft="-4.5sp"
-                    android:layout_marginTop="-50sp"
-                    android:backgroundTint="#3DC0D8"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="06"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_extrabold"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-    </GridLayout>
-</HorizontalScrollView>
-
-<TextView
-    android:id="@+id/textmanguera"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="20dp"
-    android:text="MANGUERA"
-    android:fontFamily="@font/nunito_black"
-    android:textColor="#3C4048"
-    android:textSize="16sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/ScrollCara" />
-
-<HorizontalScrollView
-    android:id="@+id/ScrollManguera"
-    android:layout_width="match_parent"
-    android:layout_height="120sp"
-    android:layout_marginStart="15dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="20dp"
-    android:fillViewport="true"
-    android:orientation="horizontal"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textmanguera">
-
-    <GridLayout
-        android:id="@+id/gridManguera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="12"
-        android:columnCount="15"
-        android:rowCount="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.032">
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/mangueragas90"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelmanguera" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/gas90"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="-55sp"
-                    android:backgroundTint="#EDE431"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="GAS 90"
-                        android:fontFamily="@font/nunito_black"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/mangueragas84"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelmanguera" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/gas84"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="-55sp"
-                    android:backgroundTint="#E80909"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="GAS 84"
-                        android:fontFamily="@font/nunito_black"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/mangueradiesel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelmanguera" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/diesel"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="-55sp"
-                    android:backgroundTint="#000000"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="Diesel"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/mangueragas95"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelmanguera" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/gas95"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="-55sp"
-                    android:backgroundTint="#0626F1"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="GAS 95"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/mangueragas97"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelmanguera" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/gas97"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="-55sp"
-                    android:backgroundTint="#34B504"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="GAS 97"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/mangueraglp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="5sp"
-            android:clickable="true"
-            android:foreground="@drawable/activitycard"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="5sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="8sp"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="100sp"
-                    android:layout_height="80sp"
-                    android:src="@drawable/icon_fuelmanguera" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/glp"
-                    android:layout_width="50sp"
-                    android:layout_height="50sp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="-55sp"
-                    android:backgroundTint="#ED4B22"
-                    app:cardCornerRadius="50sp">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="GLP"
-                        android:textAlignment="center"
-                        android:textColor="#FFF"
-                        android:fontFamily="@font/nunito_black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
-    </GridLayout>
-</HorizontalScrollView>
-
-<TextView
-    android:id="@+id/textView3"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="5dp"
-    android:text="MODALIDAD"
-    android:fontFamily="@font/nunito_black"
-    android:textColor="#3C4048"
-    android:textSize="16sp"
-    android:textStyle="bold"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/ScrollManguera" />
-
-<TextView
-    android:id="@+id/textView4"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="5dp"
-    android:text="OPERACIÓN"
-    android:fontFamily="@font/nunito_black"
-    android:textColor="#3C4048"
-    android:textSize="18sp"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btnlibre" />
-
-<TextView
-    android:id="@+id/textView5"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="5dp"
-    android:text="TRANSACCIONES"
-    android:fontFamily="@font/nunito_black"
-    android:textColor="#3C4048"
-    android:textSize="16sp"
-    android:textStyle="bold"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btnserafi" />
-
-<Button
-    android:id="@+id/btnlibre"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="5dp"
-    android:letterSpacing="0.05"
-    android:text="LIBRE"
-    android:fontFamily="@font/nunito_extrabold"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-<Button
-    android:id="@+id/btnsoles"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginTop="5dp"
-    android:letterSpacing="0.05"
-    android:text="SOLES"
-    android:fontFamily="@font/nunito_extrabold"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintEnd_toStartOf="@+id/btngalones"
-    app:layout_constraintStart_toEndOf="@+id/btnlibre"
-    app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-<Button
-    android:id="@+id/btngalones"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="20dp"
-    android:letterSpacing="0.05"
-    android:text="GALONES"
-    android:fontFamily="@font/nunito_extrabold"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-<Button
-    android:id="@+id/btnboleta"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="5sp"
-    android:letterSpacing="0.05"
-    android:text="BOLETA"
-    android:fontFamily="@font/nunito_black"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-<Button
-    android:id="@+id/btnfactura"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-
-    android:layout_marginTop="5dp"
-    android:letterSpacing="0.05"
-    android:text="FACTURA"
-    android:fontFamily="@font/nunito_extrabold"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintEnd_toStartOf="@+id/btnfac"
-    app:layout_constraintStart_toEndOf="@+id/btnboleta"
-    app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-<Button
-    android:id="@+id/btnfac"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginTop="0dp"
-    android:layout_marginEnd="20dp"
-    android:letterSpacing="0.05"
-    android:text="FAC."
-    android:fontFamily="@font/nunito_extrabold"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/btnboleta" />
-
-<Button
-    android:id="@+id/btnserafi"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginStart="20dp"
-    android:layout_marginTop="2dp"
-    android:letterSpacing="0.05"
-    android:text="SERAFI"
-    android:fontFamily="@font/nunito_extrabold"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btnboleta" />
-
-
-<Button
-    android:id="@+id/btncanje"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginTop="2dp"
-    android:letterSpacing="0.05"
-    android:text="CANJE"
-    android:fontFamily="@font/nunito_extrabold"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintEnd_toStartOf="@+id/btnncredito"
-    app:layout_constraintStart_toEndOf="@+id/btnserafi"
-    app:layout_constraintTop_toBottomOf="@+id/btnfactura" />
-
-<Button
-    android:id="@+id/btnncredito"
-    android:layout_width="110sp"
-    android:layout_height="50sp"
-    android:layout_marginTop="2dp"
-    android:letterSpacing="0.05"
-    android:text="NOTA CREDITO"
-    android:fontFamily="@font/nunito_extrabold"
-    android:layout_marginEnd="20dp"
-    android:textAlignment="center"
-    android:textColor="#FFFFFF"
-    android:textSize="10sp"
-    app:cornerRadius="5sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/btnfac" />
-
-<LinearLayout
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
-    android:layout_height="40sp"
-    android:layout_marginStart="20sp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="20sp"
-    android:background="@drawable/solid_menu"
-    android:gravity="center"
-    android:textAlignment="center"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="1.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView5"
-    app:layout_constraintVertical_bias="0.013">
-
-
-    <TextView
-        android:layout_width="50sp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nunito_semibold"
-        android:layout_marginEnd="2dp"
-        android:text="N° PLACA"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-    <TextView
-        android:layout_width="60sp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nunito_semibold"
-        android:layout_marginEnd="2dp"
-        android:text="ID CLIENTE"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-    <TextView
-        android:layout_width="70sp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nunito_semibold"
-        android:layout_marginEnd="2dp"
-        android:text="RUC"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-    <TextView
-        android:layout_width="100sp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nunito_semibold"
-        android:layout_marginEnd="2dp"
-        android:text="R. SOCIAL"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-    <TextView
-        android:layout_width="40sp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/nunito_semibold"
-        android:layout_marginEnd="2dp"
-        android:text="TOTAL"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="10sp" />
-
-</LinearLayout>
-
-<HorizontalScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="5dp"
-    android:layout_marginBottom="20dp"
-    android:layout_marginEnd="10dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-    app:layout_constraintVertical_bias="0.058">
-
-    <GridLayout
-        android:id="@+id/gridModal"
+    <HorizontalScrollView
+        android:id="@+id/ScrollCara"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10sp"
+        android:layout_height="120sp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="10sp"
-        android:columnCount="12"
-        android:orientation="vertical"
-        android:rowCount="3"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="20dp"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <GridLayout
+            android:id="@+id/gridCara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:columnCount="15"
+            android:rowCount="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.032">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara01"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="01"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara02"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="02"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara03"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="03"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara04"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="04"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara05"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="05"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cara06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelcara" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/numcara06"
+                        android:layout_width="40sp"
+                        android:layout_height="40sp"
+                        android:layout_marginLeft="-4.5sp"
+                        android:layout_marginTop="-50sp"
+                        android:backgroundTint="#3DC0D8"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="06"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textmanguera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="MANGUERA"
+        android:textColor="#3C4048"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.032">
+        app:layout_constraintTop_toBottomOf="@+id/ScrollCara" />
 
-        <LinearLayout
-            android:id="@+id/card01"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/solid_menu"
-            android:backgroundTint="@color/white"
-            android:elevation="5dp"
-            android:gravity="center"
-            android:padding="8sp"
-            android:textAlignment="center"
+    <HorizontalScrollView
+        android:id="@+id/ScrollManguera"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textmanguera">
+
+        <GridLayout
+            android:id="@+id/gridManguera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:columnCount="15"
+            android:rowCount="1"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.032">
 
 
-            <TextView
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="A3N-887"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="60sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="1146960"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="10457815478521"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="100sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="Nombre de la Empres Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="30sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="S/.25."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
             <androidx.cardview.widget.CardView
-                android:id="@+id/carddetalles"
+                android:id="@+id/mangueragas90"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardElevation="0dp"
-                >
-                <ImageView
-                    android:layout_width="20sp"
-                    android:layout_height="30sp"
-                    android:src="@drawable/icon_detalletrans" />
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas90"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#EDE431"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_black"
+                            android:gravity="center"
+                            android:text="GAS 90"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueragas84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas84"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#E80909"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_black"
+                            android:gravity="center"
+                            android:text="GAS 84"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueradiesel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/diesel"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#000000"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_black"
+                            android:gravity="center"
+                            android:text="Diesel"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueragas95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas95"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#0626F1"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_black"
+                            android:gravity="center"
+                            android:text="GAS 95"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueragas97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gas97"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#34B504"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_black"
+                            android:gravity="center"
+                            android:text="GAS 97"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mangueraglp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5sp"
+                android:clickable="true"
+                android:foreground="@drawable/activitycard"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8sp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100sp"
+                        android:layout_height="80sp"
+                        android:src="@drawable/icon_fuelmanguera" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/glp"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="-55sp"
+                        android:backgroundTint="#ED4B22"
+                        app:cardCornerRadius="50sp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nunito_black"
+                            android:gravity="center"
+                            android:text="GLP"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
 
+        </GridLayout>
+    </HorizontalScrollView>
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="MODALIDAD"
+        android:textColor="#3C4048"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollManguera" />
 
-        <LinearLayout
-            android:id="@+id/card02"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/solid_menu"
-            android:backgroundTint="@color/white"
-            android:elevation="5dp"
-            android:gravity="center"
-            android:padding="8sp"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-
-            <TextView
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="A3N-887"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="60sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="1146960"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="10457815478521"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="100sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="Nombre de la Empres Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_black"
+        android:text="OPERACIÓN"
+        android:textColor="#3C4048"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnlibre" />
 
 
-            <TextView
-                android:layout_width="30sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="S/.25."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+    <Button
+        android:id="@+id/btnlibre"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="LIBRE"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardElevation="0dp"
-                >
-                <ImageView
-                    android:layout_width="20sp"
-                    android:layout_height="30sp"
-                    android:src="@drawable/icon_detalletrans" />
-            </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnsoles"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="SOLES"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintEnd_toStartOf="@+id/btngalones"
+        app:layout_constraintStart_toEndOf="@+id/btnlibre"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/card03"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/solid_menu"
-            android:backgroundTint="@color/white"
-            android:elevation="5dp"
-            android:gravity="center"
-            android:padding="8sp"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-
-            <TextView
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="A3N-887"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="60sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="1146960"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="10457815478521"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="100sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="Nombre de la Empres Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+    <Button
+        android:id="@+id/btngalones"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="GALONES"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
-            <TextView
-                android:layout_width="30sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="S/.25."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
+    <Button
+        android:id="@+id/btnboleta"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:letterSpacing="0.05"
+        android:text="BOLETA"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardElevation="0dp"
-                >
-                <ImageView
-                    android:layout_width="20sp"
-                    android:layout_height="30sp"
-                    android:src="@drawable/icon_detalletrans" />
-            </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnfactura"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="FACTURA"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnboleta" />
 
-        </LinearLayout>
+    <Button
+        android:id="@+id/btnfac"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="FAC."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfactura" />
 
-        <LinearLayout
-            android:id="@+id/card04"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/solid_menu"
-            android:backgroundTint="@color/white"
-            android:elevation="5dp"
-            android:gravity="center"
-            android:padding="8sp"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+    <Button
+        android:id="@+id/btnserafi"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="SERAFI"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnfac" />
 
+    <Button
+        android:id="@+id/btncanje"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="CANJE"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnserafi" />
 
-            <TextView
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="A3N-887"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
+    <Button
+        android:id="@+id/btnncredito"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:letterSpacing="0.05"
+        android:text="NOTA CREDITO"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:cornerRadius="5sp"
+        app:layout_constraintTop_toBottomOf="@+id/btncanje"
+        tools:layout_editor_absoluteX="20dp" />
 
-            <TextView
-                android:layout_width="60sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="1146960"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="10457815478521"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="100sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="Nombre de la Empres Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-
-            <TextView
-                android:layout_width="30sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="S/.25."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardElevation="0dp"
-                >
-                <ImageView
-                    android:layout_width="20sp"
-                    android:layout_height="30sp"
-                    android:src="@drawable/icon_detalletrans" />
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/card05"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/solid_menu"
-            android:backgroundTint="@color/white"
-            android:elevation="5dp"
-            android:gravity="center"
-            android:padding="8sp"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-
-            <TextView
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="A3N-887"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="60sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="1146960"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="10457815478521"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="100sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="Nombre de la Empres Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-
-            <TextView
-                android:layout_width="30sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="S/.25."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardElevation="0dp"
-                >
-                <ImageView
-                    android:layout_width="20sp"
-                    android:layout_height="30sp"
-                    android:src="@drawable/icon_detalletrans" />
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/card06"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/solid_menu"
-            android:backgroundTint="@color/white"
-            android:elevation="5dp"
-            android:gravity="center"
-            android:padding="8sp"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-
-            <TextView
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="A3N-887"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="60sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="1146960"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="10457815478521"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="100sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="Nombre de la Empres Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-
-            <TextView
-                android:layout_width="30sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="S/.25."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:layout_width="10sp"
-                android:layout_height="40sp"
-                android:src="@drawable/icon_detalletrans" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/card07"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/solid_menu"
-            android:backgroundTint="@color/white"
-            android:elevation="5dp"
-            android:gravity="center"
-            android:padding="8sp"
-            android:textAlignment="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-
-            <TextView
-                android:layout_width="50sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="A3N-887"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="60sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="1146960"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="10457815478521"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <TextView
-                android:layout_width="100sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="Nombre de la Empres Nombre"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-
-            <TextView
-                android:layout_width="30sp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:text="S/.25."
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="12sp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardElevation="0dp"
-                >
-                <ImageView
-                    android:layout_width="20sp"
-                    android:layout_height="30sp"
-                    android:src="@drawable/icon_detalletrans" />
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-    </GridLayout>
-
-
-</HorizontalScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
