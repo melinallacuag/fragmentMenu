@@ -826,7 +826,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/btnfactura"
+        android:id="@+id/btneditarfactura"
         android:layout_width="match_parent"
         android:layout_height="50sp"
         android:layout_marginStart="20dp"
@@ -835,6 +835,7 @@
         android:fontFamily="@font/nunito_extrabold"
         android:letterSpacing="0.05"
         android:text="FACTURA"
+        android:backgroundTint="#F31212"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
@@ -860,7 +861,7 @@
         app:cornerRadius="5sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnfactura" />
+        app:layout_constraintTop_toBottomOf="@+id/btneditarfactura" />
 
     <Button
         android:id="@+id/btnserafi"
