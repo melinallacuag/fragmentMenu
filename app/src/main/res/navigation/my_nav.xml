@@ -78,6 +78,12 @@
         <action
             android:id="@+id/action_grifoFragment_to_reporteFragment"
             app:destination="@id/reporteFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_cierrezFragment"
+            app:destination="@id/cierrezFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_cierrexFragment"
+            app:destination="@id/cierrexFragment" />
     </fragment>
     <fragment
         android:id="@+id/reporteFragment"
@@ -137,4 +143,14 @@
         android:name="com.example.fragmentmenu.EditarOpFacturaFragment"
         android:label="fragment_editar_op_factura"
         tools:layout="@layout/fragment_editar_op_factura" />
+    <fragment
+        android:id="@+id/cierrexFragment"
+        android:name="com.example.fragmentmenu.CierrexFragment"
+        android:label="fragment_cierrex"
+        tools:layout="@layout/fragment_cierrex" />
+    <fragment
+        android:id="@+id/cierrezFragment"
+        android:name="com.example.fragmentmenu.CierrezFragment"
+        android:label="fragment_cierrez"
+        tools:layout="@layout/fragment_cierrez" />
 </navigation>

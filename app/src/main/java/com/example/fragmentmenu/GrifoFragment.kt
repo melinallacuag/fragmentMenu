@@ -28,6 +28,12 @@ class GrifoFragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_facturaFragment)
         }
 
+        cardCierrex.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_cierrexFragment)
+        }
+        cardCierrez.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_cierrezFragment)
+        }
 
         GrifocardsHome.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_mainFragment)
