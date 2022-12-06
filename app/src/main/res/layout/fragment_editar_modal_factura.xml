@@ -73,7 +73,7 @@
 
             <EditText
                 android:id="@+id/inputplaca"
-                android:layout_width="280dp"
+                android:layout_width="220dp"
                 android:layout_height="50sp"
                 android:background="@drawable/border"
                 android:fontFamily="@font/nunito_semibold"
@@ -87,10 +87,11 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:text="SUNAT"
                 android:layout_gravity="end"
                 android:layout_marginStart="10sp"
+                android:textSize="10sp"
                 android:fontFamily="@font/nunito_extrabold"
-                android:text="SUNAT"
                 app:layout_constraintEnd_toEndOf="parent" />
 
         </LinearLayout>
