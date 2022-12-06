@@ -78,12 +78,20 @@
         <action
             android:id="@+id/action_grifoFragment_to_reporteFragment"
             app:destination="@id/reporteFragment" />
-        <action
-            android:id="@+id/action_grifoFragment_to_cierrezFragment"
-            app:destination="@id/cierrezFragment" />
+
         <action
             android:id="@+id/action_grifoFragment_to_cierrexFragment"
             app:destination="@id/cierrexFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_cierrezFragment22"
+            app:destination="@id/cierrezFragment2" />
+        <action
+            android:id="@+id/action_grifoFragment_to_cierreTurnoFragment"
+            app:destination="@id/cierreTurnoFragment" />
+        <action
+            android:id="@+id/action_grifoFragment_to_inicioTurnoFragment"
+            app:destination="@id/inicioTurnoFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/reporteFragment"
@@ -149,8 +157,17 @@
         android:label="fragment_cierrex"
         tools:layout="@layout/fragment_cierrex" />
     <fragment
-        android:id="@+id/cierrezFragment"
+        android:id="@+id/cierrezFragment2"
         android:name="com.example.fragmentmenu.CierrezFragment"
-        android:label="fragment_cierrez"
-        tools:layout="@layout/fragment_cierrez" />
+        android:label="CierrezFragment" />
+    <fragment
+        android:id="@+id/inicioTurnoFragment"
+        android:name="com.example.fragmentmenu.InicioTurnoFragment"
+        android:label="fragment_inicio_turno"
+        tools:layout="@layout/fragment_inicio_turno" />
+    <fragment
+        android:id="@+id/cierreTurnoFragment"
+        android:name="com.example.fragmentmenu.CierreTurnoFragment"
+        android:label="fragment_cierre_turno"
+        tools:layout="@layout/fragment_cierre_turno" />
 </navigation>

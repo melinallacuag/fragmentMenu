@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CierrexFragment">
+    tools:context=".CierreTurnoFragment">
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -17,7 +17,6 @@
         android:padding="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -26,7 +25,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_black"
             android:gravity="center"
-            android:text="CIERRE X"
+            android:text="CIERRE TURNO"
             android:textColor="#fff"
             android:textSize="25sp" />
 
@@ -35,21 +34,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="20dp"
-
             android:fontFamily="@font/nunito_semibold"
-            android:text="Resumen de las ventas realizadas al finalizar  el turno"
+            android:text="Seguro de realizar cambio de turno"
             android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            >
-
-
-        </LinearLayout>
 
 
     </LinearLayout>
@@ -58,16 +47,16 @@
         android:id="@+id/BtnSalirCancelar"
         android:layout_width="150sp"
         android:layout_height="60sp"
-        android:backgroundTint="#D80619"
-        android:text="Salir"
         android:layout_marginEnd="40dp"
         android:layout_marginTop="-30dp"
+        android:backgroundTint="#D80619"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="NO"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:fontFamily="@font/nunito_extrabold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <Button
         android:id="@+id/BtnSalirAceptar"
@@ -76,13 +65,13 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="-30dp"
         android:backgroundTint="#0BB31C"
+        android:fontFamily="@font/nunito_extrabold"
         android:gravity="center"
-        android:text="Aceptar"
+        android:text="SI"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:fontFamily="@font/nunito_extrabold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

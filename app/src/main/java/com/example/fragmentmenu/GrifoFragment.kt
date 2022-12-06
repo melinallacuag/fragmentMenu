@@ -32,7 +32,14 @@ class GrifoFragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_cierrexFragment)
         }
         cardCierrez.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_cierrezFragment)
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_cierrezFragment22)
+        }
+
+        cardIniciodia.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_inicioTurnoFragment)
+        }
+        cardCambioturno.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_grifoFragment_to_cierreTurnoFragment)
         }
 
         GrifocardsHome.setOnClickListener{

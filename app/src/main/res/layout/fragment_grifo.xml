@@ -190,7 +190,7 @@
                         android:id="@+id/cambioturno"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Cambio Turno"
+                        android:text="Cierre Turno"
                         android:fontFamily="@font/nunito_semibold"
                         android:textAlignment="center"
                         android:textColor="#fff"
