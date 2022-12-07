@@ -7,24 +7,49 @@
     tools:context=".ReporteFragment">
 
     <LinearLayout
+        android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
-        android:background="#123456"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        android:background="@drawable/contenedor_login"
+        android:elevation="5dp"
+        android:padding="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/icon_borrar" />
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="90sp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/icon_fuelcara" />
+
+            <TextView
+                android:id="@+id/reportecara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_usermodal"
+                android:fontFamily="@font/nunito_black"
+                android:padding="5dp"
+                android:text="Cara 01"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="vertical">
 
             <LinearLayout
@@ -33,40 +58,639 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="150dp"
+                    android:id="@+id/reportemanguera"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_black"
                     android:text="GAS 80"
-                    android:fontFamily="@font/nunito_semibold"
-                    android:textColor="#fff"/>
+                    android:textColor="#D31F1F"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/reportemonte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/nunito_black"
+                    android:text="S/. 00.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="#D31F1F"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="Cantidad:"
+                    android:textColor="#1C1D1E"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:text="S/. 00.00"
                     android:fontFamily="@font/nunito_semibold"
-                    android:textColor="#fff"
-                    android:textAlignment="textEnd" />
+                    android:text="10.00 gl"
+                    android:textColor="#1C1D1E"
+                    android:textSize="16sp" />
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Manguera" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cantidad" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="Fecha y Hora:"
+                    android:textColor="#1C1D1E"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fecha y Hora" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="20/01/22 10:00 a.m"
+                    android:textColor="#1C1D1E"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/solid_menu"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="Cara"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="Manguera"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="Cantidad"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="Precio"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
+        tools:layout_editor_absoluteX="-21dp">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout17">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/solid_menu"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="01"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="GAS 84"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="10.00 gl"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/nunito_black"
+            android:text="S/. 00.00"
+            android:textAlignment="center"
+            android:textColor="#123456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
 
     <GridLayout
         android:id="@+id/gridLayout2"
@@ -104,6 +728,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/ReportcardsUsuario"
             android:layout_width="1dp"
@@ -127,6 +752,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/ReportcardsGrifo"
             android:layout_width="1dp"
@@ -150,6 +776,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/ReportcardsReporte"
             android:layout_width="1dp"
@@ -168,6 +795,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/icon_reporte" />
+
                 <TextView
                     android:id="@+id/txtreporte"
                     android:layout_width="match_parent"
@@ -182,6 +810,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/ReportcardsTienda"
             android:layout_width="1dp"

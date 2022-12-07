@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_welcome"
+ android:background="@drawable/bienvenida"
     tools:context=".Bienvenida">
 
     <ImageView
@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_sistema" />
@@ -24,10 +24,11 @@
         android:id="@+id/imggrifo"
         android:layout_width="match_parent"
         android:layout_height="400sp"
-        android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="-50sp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imglogo"
         app:srcCompat="@drawable/bienvenidalogo" />
@@ -43,10 +44,11 @@
         android:letterSpacing="0.15"
         android:text="Bienvenido"
         android:textAlignment="center"
-        android:textColor="#0D209A"
+        android:textColor="#FFF"
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imggrifo" />
 
@@ -54,19 +56,19 @@
         android:id="@+id/textpresent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lineHeight="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="@font/nunito_semibold"
+        android:lineHeight="20dp"
         android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy."
         android:textAlignment="center"
-        android:textColor="#3C4048"
+        android:textColor="#FFF"
         android:textFontWeight="900"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textWelcome"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.188" />
 </androidx.constraintlayout.widget.ConstraintLayout>
