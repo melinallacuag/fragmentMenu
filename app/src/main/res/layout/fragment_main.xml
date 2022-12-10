@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_menu"
+    android:background="@drawable/fondo_usuario"
     tools:context=".MainFragment">
 
     <GridLayout
@@ -23,6 +23,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.271">
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardGrifo"
             android:layout_width="wrap_content"
@@ -53,17 +54,17 @@
                     android:id="@+id/grifo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Grifo"
-                    android:letterSpacing="0.15"
                     android:fontFamily="@font/nunito_black"
+                    android:letterSpacing="0.15"
+                    android:text="Grifo"
                     android:textAlignment="center"
                     android:textColor="#535455"
-                    android:textSize="16sp"
-                    />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardTienda"
             android:layout_width="wrap_content"
@@ -71,9 +72,9 @@
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:layout_margin="5sp"
+            android:layout_marginBottom="20dp"
             android:clickable="true"
             android:foreground="@drawable/activitycard"
-            android:layout_marginBottom="20dp"
             app:cardBackgroundColor="#CDE0F3"
             app:cardCornerRadius="10dp"
             app:cardElevation="5sp">
@@ -94,9 +95,9 @@
                     android:id="@+id/tienda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tienda"
-                    android:letterSpacing="0.15"
                     android:fontFamily="@font/nunito_black"
+                    android:letterSpacing="0.15"
+                    android:text="Tienda"
                     android:textAlignment="center"
                     android:textColor="#535455"
                     android:textSize="16sp" />
@@ -104,6 +105,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardReporte"
             android:layout_width="wrap_content"
@@ -134,9 +136,9 @@
                     android:id="@+id/reporte"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Reporte"
-                    android:letterSpacing="0.15"
                     android:fontFamily="@font/nunito_black"
+                    android:letterSpacing="0.15"
+                    android:text="Reporte"
                     android:textAlignment="center"
                     android:textColor="#535455"
                     android:textSize="16sp" />
@@ -144,6 +146,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardPerfil"
             android:layout_width="wrap_content"
@@ -174,9 +177,9 @@
                     android:id="@+id/user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Usuario"
-                    android:letterSpacing="0.15"
                     android:fontFamily="@font/nunito_black"
+                    android:letterSpacing="0.15"
+                    android:text="Usuario"
                     android:textAlignment="center"
                     android:textColor="#535455"
                     android:textSize="16sp" />
@@ -184,6 +187,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card"
             android:layout_width="wrap_content"
@@ -214,9 +218,9 @@
                     android:id="@+id/text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nulo"
-                    android:letterSpacing="0.15"
                     android:fontFamily="@font/nunito_black"
+                    android:letterSpacing="0.15"
+                    android:text="Nulo"
                     android:textAlignment="center"
                     android:textColor="#535455"
                     android:textSize="16sp" />
@@ -224,6 +228,7 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardSalir"
             android:layout_width="wrap_content"
@@ -254,9 +259,9 @@
                     android:id="@+id/close"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Salir"
-                    android:letterSpacing="0.15"
                     android:fontFamily="@font/nunito_black"
+                    android:letterSpacing="0.15"
+                    android:text="Salir"
                     android:textAlignment="center"
                     android:textColor="#535455"
                     android:textSize="16sp" />
@@ -269,7 +274,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="100sp"
         android:layout_height="100sp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:scaleType="centerCrop"
         android:src="@drawable/foto_empleador"
@@ -283,13 +288,28 @@
         android:id="@+id/nombre"
         android:layout_width="250sp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Miguel Juan Lazaro Peña "
         android:textAlignment="viewStart"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre3" />
+
+    <TextView
+        android:id="@+id/nombre3"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Hola"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -299,7 +319,8 @@
         android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunito_semibold"
         android:text="Turno 01"
         android:textAlignment="viewStart"
@@ -312,7 +333,8 @@
         android:layout_width="250sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
         android:fontFamily="@font/nunito_semibold"
         android:text="20/01/22 10:00 a.m"
         android:textAlignment="viewStart"
@@ -324,11 +346,11 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:layout_marginTop="30sp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="30sp"
         android:layout_marginEnd="20dp"
-        android:elevation="10dp"
         android:adjustViewBounds="true"
+        android:elevation="10dp"
         android:scaleType="centerCrop"
         android:src="@drawable/img03"
         app:layout_constraintBottom_toBottomOf="parent"
